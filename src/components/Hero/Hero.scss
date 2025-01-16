@@ -1,0 +1,35 @@
+.hero-section {
+    overflow-x: hidden; 
+    position: relative; 
+    width: 100vw;
+
+    &__loading {
+        overflow: hidden; 
+        position: absolute; 
+        width: 100vw;
+        z-index: 100;
+        background-color: rgb(245 243 255 / var(--tw-bg-opacity, 1)); 
+    }
+
+    &__video-frame {
+        overflow: hidden; 
+        position: relative; 
+        z-index: 10; 
+        width: 100vw;
+        height: 100dvh;
+        background-color: #dfdff2;
+
+        &__content {
+            overflow: hidden; 
+            position: absolute; 
+            top: 50%; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 50; 
+            border-radius: 0.5rem; 
+            width: 16rem;
+            height: 16rem;
+            cursor: pointer; 
+        }
+    }
+}
